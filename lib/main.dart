@@ -1,8 +1,3 @@
-// ============================================================
-// Archivo: lib/main.dart
-// Tema: Catálogo de Videojuegos (mabalinmo a sukatan ti tema)
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,9 +21,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// ---------------------------------------------------------------------
-// MODELO: Modelo para los elementos de la lista.
-// ---------------------------------------------------------------------
 class Elemento {
   final String nombre;
   final IconData icono;
@@ -43,9 +35,6 @@ class Elemento {
   });
 }
 
-// ---------------------------------------------------------------------
-// ARREGLO: Lista con los elementos del nuevo tema.
-// ---------------------------------------------------------------------
 const List<Elemento> elementos = [
   Elemento(
     nombre: 'Juegos de Acción',
@@ -89,9 +78,6 @@ const List<Elemento> elementos = [
   ),
 ];
 
-// ---------------------------------------------------------------------
-// PANTALLA 1: PRINCIPAL (Rejilla)
-// ---------------------------------------------------------------------
 class PantallaPrincipal extends StatelessWidget {
   const PantallaPrincipal({super.key});
 
@@ -167,9 +153,6 @@ class _TarjetaElemento extends StatelessWidget {
   }
 }
 
-// ---------------------------------------------------------------------
-// PANTALLA 2: CONTENIDO (Detalle)
-// ---------------------------------------------------------------------
 class PantallaContenido extends StatelessWidget {
   final Elemento elemento;
 
